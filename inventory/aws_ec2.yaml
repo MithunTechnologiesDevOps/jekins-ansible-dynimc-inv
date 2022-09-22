@@ -1,0 +1,19 @@
+plugin: aws_ec2
+#aws_access_key: AKIATAZMLDHUXLLK7VG6
+#aws_secret_key: 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
+regions:
+  - ap-south-1
+filters:
+  instance-state-name : running
+  #tag:Name: Kuber*
+keyed_groups:
+  - key: tags.Name
+    prefix: ""
+    separator: ""
+
+
+hostnames:
+  - private-ip-address
+
+compose:
+  ansible_host: private_ip_address
