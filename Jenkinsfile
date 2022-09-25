@@ -21,7 +21,7 @@ pipeline {
     stage('CreateServers'){
       steps {
         sh "terraform -v"
-        sh "terraform plan terraformscripts/ --auto-approve"
+        sh "terraform plan terraformscripts/"
         sh "terraform init terraformscripts/ --auto-approve"
       }
     }
