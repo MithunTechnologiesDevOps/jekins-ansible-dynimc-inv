@@ -17,6 +17,13 @@ pipeline {
       }
     }
      
+    //Using Terraform can create Infrastructure
+    stage('CreateServers'){
+    
+     sh "terraform init terraform/"
+    }
+
+    
     //Run the playbook
     stage('RunPlaybook') {
       steps {
