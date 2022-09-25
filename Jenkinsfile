@@ -20,6 +20,7 @@ pipeline {
     //Run the playbook
     stage('RunPlaybook') {
       steps {
+        sh "whoami"
         //List the dymaic inventory just for verification
         sh "ansible-inventory --graph -i inventory/aws_ec2.yaml"
         //Run playbook using dynamic inventory & limit exuection only fo tomcatservers.
