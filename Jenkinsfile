@@ -19,9 +19,11 @@ pipeline {
      
     //Using Terraform can create Infrastructure
     stage('CreateServers'){
-     sh "terraform -v"
-     sh "terraform plan terraformscripts/ --auto-approve"
-     sh "terraform init terraformscripts/ --auto-approve"
+      steps {
+        sh "terraform -v"
+        sh "terraform plan terraformscripts/ --auto-approve"
+        sh "terraform init terraformscripts/ --auto-approve"
+      }
     }
 
     
