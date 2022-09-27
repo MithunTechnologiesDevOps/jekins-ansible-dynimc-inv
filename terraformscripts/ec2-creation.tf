@@ -10,7 +10,7 @@ resource "aws_instance" "AWSEC2Instance"{
      security_groups = ["launch-wizard-2"]
      key_name        = "devopsjulybatch"
      tags = {
-        Name = "tomcat servers"
+        Name = "tomcatservers"
      }
 }
 
