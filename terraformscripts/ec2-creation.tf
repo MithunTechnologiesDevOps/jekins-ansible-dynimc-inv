@@ -1,5 +1,5 @@
 provider "aws"{
-region = "ap-souteast-2"
+region = "ap-southeast-2"
 }
 
 
