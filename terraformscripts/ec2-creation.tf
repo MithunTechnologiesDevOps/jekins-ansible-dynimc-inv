@@ -1,15 +1,17 @@
 provider "aws"{
-   region  = "ap-southeast-1" 
+region = "ap-souteast-2"
 }
 
-resource "aws_instance" "AWSEC2Instance"{
-     count   = 1
-     ami = "ami-010d564ad44bd1912"
-     instance_type = "t2.micro"
-     security_groups = ["launch-wizard-2"]
-     key_name        = "devopsmss"
-     tags = {
-        Name = "tomcatservers"
-     }
+
+resource "aws_instance" "AWSInstance"{
+     ami = "ami-08cd0547bf85331e7"
+	 instance_type = "t2.micro"
+	 security_groups = ["launch-wizard-2"]
+	 key_name = "devopstrainingmss"
+	 tags = {
+	 Name = "tomcatservers"
+	 }
+
 }
+
 
