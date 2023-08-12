@@ -8,6 +8,6 @@ instance_type = "t2.micro"
 key_name = "devopsmithuntechnologiesbhaskar"
 security_groups = ["launch-wizard-2"]
 tags = {
-Name = "tomcatsservers"
+Name = "tomcatservers"
 }
 }
