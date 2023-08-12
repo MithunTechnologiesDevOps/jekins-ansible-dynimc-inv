@@ -1,14 +1,15 @@
+
 provider "aws"{
-region = "eu-west-3"
+region = "ap-south-1"
 }
 
 resource "aws_instance" "AWSServer"{
-ami = "ami-0d767e966f3458eb5"
+ami = "ami-0da59f1af71ea4ad2"
 instance_type = "t2.micro"
-key_name = "devopsmss"
+key_name = "devopsmithuntechnologiesbhaskar"
 security_groups = ["launch-wizard-2"]
-tags={
-Name = "tomcatservers"
+tags = {
+Name = "tomcatsservers"
 }
 }
 
