@@ -1,13 +1,12 @@
 provider "aws"{
-region = "ap-south-1"
+region = "ap-southeast-1"
 }
 
-
-resource "aws_instance"  "AWSInstance" {
- ami = "ami-0b32d400456908bf9"
+resource "aws_instance" "AWSInstance"{
+ ami = "ami-049731af5cd9af3ec"
  instance_type = "t2.micro"
- key_name = "mithuntechnologiesdevopsaws2025"
- security_groups = ["launch-wizard-2"]
+ key_name = "mithuntechnologiesdevops"
+ security_groups = ["launch-wizard-4"]
  tags = {
  Name = "terraformserver"
  }
