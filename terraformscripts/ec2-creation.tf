@@ -1,14 +1,15 @@
-provider "aws" {
-    region = "ap-southeast-1"
+provider "aws"{
+region = "ap-south-2"
 }
 
+
 resource "aws_instance" "AWSEC2Instance" {
-  ami  = "ami-01dc51e87421923b6"
-  instance_type = "t2.micro"
-  key_name = "mithuntechnologiesdevops" 
-  security_groups = ["launch-wizard-2"]
-  tags = {
-    Name = "TerraformServer"
-  } 
+ ami = "ami-090b9c8aa1c84aefc"
+ instance_type = "t3.micro"
+ key_name = "devopsfeb2026"
+ security_groups = ["launch-wizard-2"]
+ tags = {
+ Name = "Terraform Server"
+ }
 }
 
