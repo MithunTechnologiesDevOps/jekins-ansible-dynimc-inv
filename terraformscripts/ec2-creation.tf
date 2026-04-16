@@ -2,14 +2,14 @@ provider "aws"{
 region = "ap-south-2"
 }
 
+resource "aws_instance"  "AWSINSTANCE" {
 
-resource "aws_instance" "AWSEC2Instance" {
- ami = "ami-090b9c8aa1c84aefc"
- instance_type = "t3.micro"
- key_name = "devopsfeb2026"
- security_groups = ["launch-wizard-2"]
- tags = {
- Name = "Terraform Server"
- }
+  ami = "ami-0aa31b568c1e8d622"
+  instance_type = "t3.micro"
+  key_name = "devopsfeb2026"
+  security_groups = ["launch-wizard-2"]
+  tags = {
+  Name =  "terraformserver"
+  } 
+
 }
-
