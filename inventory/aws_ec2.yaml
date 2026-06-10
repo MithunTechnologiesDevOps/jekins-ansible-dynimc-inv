@@ -4,7 +4,7 @@ plugin: aws_ec2
 #aws_secret_key: 
 
 regions:
-  - ap-south-2
+  - ap-south-1
 
 filters:
   instance-state-name : running
